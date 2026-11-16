@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Rotating Car</title>
+  <link rel="stylesheet" href="rotating-car.css">
+</head>
+<body>
+  <h2>Rotating Car</h2>
+  <div id="stage">
+    <div id="road"></div>
+    <div id="line"></div>
+    <div id="pivot"></div>
+    <div id="car">🚗</div>
+  </div>
+  <p>
+    Speed: <input type="range" id="speed" min="0" max="5" step="0.5" value="2">
+    &nbsp; Angle: <b id="deg">0°</b>
+    &nbsp; <button id="mode">Spin in one place</button>
+  </p>
+  <p>The car goes round the white centre point (the axis).</p>
+  <script src="script.js"></script>
+</body>
+</html>

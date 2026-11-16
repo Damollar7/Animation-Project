@@ -1,0 +1,8 @@
+/* CSS for the Rotating Car animation only */
+body{margin:0;background:#14202b;color:#fff;font-family:Arial,sans-serif;text-align:center}
+button{padding:6px 12px;font-size:15px;border:0;border-radius:6px;background:#7de3d0;cursor:pointer}
+#stage{position:relative;width:600px;height:450px;max-width:96%;margin:20px auto;background:#2a6b3c;border-radius:12px;overflow:hidden}
+#road{position:absolute;left:100px;top:25px;width:400px;height:400px;border:80px solid #374151;border-radius:50%;box-sizing:border-box}
+#line{position:absolute;left:140px;top:65px;width:320px;height:320px;border:3px dashed #e5e7eb;border-radius:50%;box-sizing:border-box}
+#pivot{position:absolute;left:293px;top:218px;width:14px;height:14px;background:#fff;border-radius:50%}
+#car{position:absolute;left:0;top:0;font-size:48px;line-height:48px;width:48px;height:48px}

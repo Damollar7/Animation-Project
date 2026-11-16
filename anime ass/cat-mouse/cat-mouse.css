@@ -1,0 +1,22 @@
+/* CSS for the Cat and Mouse animation only */
+body{margin:0;background:#14202b;color:#fff;font-family:Arial,sans-serif;text-align:center}
+.stage{position:relative;width:600px;height:450px;margin:20px auto;border-radius:12px;overflow:hidden}
+.floor{background:#e9d8b4}
+
+/* the cat */
+#cat{position:absolute;left:0;top:0;width:600px;height:450px;z-index:5}
+.tail{position:absolute;left:335px;top:240px;width:20px;height:90px;background:#6b7280;border-radius:10px;transform-origin:top;animation:swish 1.2s ease-in-out infinite alternate}
+@keyframes swish{from{transform:rotate(-20deg)}to{transform:rotate(30deg)}}
+.cat-body{position:absolute;left:245px;top:210px;width:110px;height:140px;background:#6b7280;border-radius:50%}
+#head{position:absolute;left:245px;top:150px;width:110px;height:90px;background:#6b7280;border-radius:50%}
+.ear{position:absolute;top:-22px;border-left:16px solid transparent;border-right:16px solid transparent;border-bottom:34px solid #6b7280}
+.ear.l{left:6px}.ear.r{right:6px}
+.eye{position:absolute;top:28px;width:26px;height:30px;background:#fef9c3;border-radius:50%}
+.eye.l{left:20px}.eye.r{right:20px}
+.pupil{position:absolute;left:9px;top:8px;width:8px;height:14px;background:#000;border-radius:50%}
+.nose{position:absolute;left:48px;top:62px;width:14px;height:10px;background:#f9a8d4;border-radius:50%}
+
+/* the mouse */
+.mouse{position:absolute;width:40px;height:22px;background:#9ca3af;border-radius:50%}
+.mouse::before{content:"";position:absolute;right:0;top:8px;width:7px;height:7px;background:#f472b6;border-radius:50%}
+.mouse::after{content:"";position:absolute;left:-24px;top:10px;width:26px;height:3px;background:#8b6b6b}
